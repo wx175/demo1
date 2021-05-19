@@ -1,2 +1,14 @@
-# vue-inputvalidate-template
-造轮子，vue3.0 + ts自定义form，input验证规则组件
+# input-validate
+## vue3 + ts 自定义表单验证
+
+
+### Project setup
+```
+npm install
+
+npm run dev
+```
+
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
