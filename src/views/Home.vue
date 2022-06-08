@@ -9,12 +9,6 @@
       <label class="form-label">邮箱</label>
       <inputValidate :input-rules="emailRules"></inputValidate>
     </div>
-
-    <div class="col-md-4">
-      <label class="form-label">密码</label>
-      <inputValidate :input-rules="passwordRules" type="password" :model-value="'1234'"></inputValidate>
-    </div>
-
     <!-- 自定义提交按钮 -->
     <!-- <template #form-sbumit-btn> <button>确认提交</button> </template> -->
   </inputValidateForm>

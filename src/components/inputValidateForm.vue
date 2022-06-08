@@ -28,6 +28,7 @@ export default defineComponent({
     // 接收inputvalidate发送的检测值
     let inputValidateArrys:inputBlurHandle[] = []
     const inputValidateCallBack = (inputValidateFun: inputBlurHandle | undefined) => {
+      console.log(inputValidateFun)
       inputValidateFun && inputValidateArrys.push(inputValidateFun)
     }
     emitter.on('create-input-validate', inputValidateCallBack)

@@ -39,6 +39,7 @@ export default defineComponent({
     const onTypeInHandle = (e: KeyboardEvent) => {
       const typeinValue = (e.target as HTMLInputElement).value
       inputRef.val = typeinValue
+      onBlurCheckHandle()
       ctx.emit('update:modelValue', typeinValue)
     }
 
@@ -74,7 +75,9 @@ export default defineComponent({
     }
 
     // 发送验证事件
-    onMounted(() => { emitter.emit('create-input-validate', onBlurCheckHandle) })
+    onMounted(() => {
+      emitter.emit('create-input-validate', onBlurCheckHandle)
+    })
 
     return {
       inputRef,
